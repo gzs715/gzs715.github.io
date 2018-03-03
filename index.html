@@ -187,14 +187,119 @@ Molloy. <br/>
     </div>
                             </div>
                         </div> <!-- #research -->
-                                          <!-- Personal -->
-                        <div class="page-section" id="gallery">
+                        <!-- Personal -->
+
+    <div class="page-section" id="gallery">
                         <div class="row">
                             <div class="col-md-12">
                             <h4 class="widget-title"><i class="fa fa-pencil"></i> Gallery </h4>
                             </div>
                         </div>
+<div class="slideshow-container">
+<div class="mySlides">
+  <div class="numbertext">1 / 8</div>
+  <img src="img/budapest.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">Budapest</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 8</div>
+  <img src="img/cafe_terrace_at_night.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">Cafe Terrace at Night</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 8</div>
+  <img src="img/jafar_iago.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">Jafar and Iago</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 8</div>
+  <img src="img/the_scream.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">The Scream</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 8</div>
+  <img src="img/the_dance.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">The Dance</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 8</div>
+  <img src="img/the_card_player.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">The Card Player</div>
+</div>
+<div class="mySlides">
+  <div class="numbertext">7 / 8</div>
+  <img src="img/wanderer_above_the_sea_of_fog.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">Wanderer above the Sea of Fog</div>
+</div>
+<div class="mySlides">
+  <div class="numbertext">8 / 8</div>
+  <img src="img/qikou.jpg" style="width:100%; border: 3px solid white;">
+  <div class="text">Qikou, Shanxi</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<!---
                         <div class="row projects-holder">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="project-item">
+                                    <img src="img/budapest.jpg" alt="Budapest">
+                                    <div class="project-hover">
+                                        <div class="inside">
+                                            <h5><a href="img/budapest">Budapest</a></h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="project-item">
                                     <img src="img/cafe_terrace_at_night.jpg" alt="cafe_terrace_at_night">
@@ -251,19 +356,18 @@ Molloy. <br/>
                                     </div>
                                 </div>
                             </div>
-                            <!--
                             <div class="col-md-4 col-sm-6">
                                 <div class="project-item">
                                     <img src="img/qikou.jpg" alt="碛口">
                                     <div class="project-hover">
                                         <div class="inside">
-                                            <h5><a href="#">碛口</a></h5>
+                                            <h5><a href="img/qikou.jpg">碛口</a></h5>
                                             <p></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            -->
+
                             <div class="col-md-4 col-sm-6">
                                 <div class="project-item">
                                     <img src="img/wanderer_above_the_sea_of_fog.jpg" alt="wanderer_above_the_sea_of_fog">
@@ -276,6 +380,7 @@ Molloy. <br/>
                                 </div>
                             </div>
                             </div>
+                        -->
                          <div class="page-section" id="travel">
                         <div class="row">
                             <div class="col-md-12">
