@@ -421,7 +421,8 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 300px 160px;
+  /*padding: 300px 200px;*/
+  padding: 25% 25%;
   position: relative;
   background: url("../img/background.jpg");
   background-repeat: no-repeat;
