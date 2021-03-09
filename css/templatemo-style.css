@@ -224,12 +224,7 @@ h1, h2, h3, h4, h5 {
   float: right;
   width: 85%;
 }
-@media screen and (max-width: 1290px) {
-  .main-content,
-  .banner-bg {
-    width: 85%;
-  }
-}
+
 @media screen and (max-width: 992px) {
   .main-content,
   .banner-bg {
@@ -280,20 +275,25 @@ hr {
   color: white;
   overflow-y: hidden;
 }
-@media screen and (max-width: 1290px) {
+
+
+@media screen and (max-width: 992px) {
   .sidebar-menu {
     overflow-y: scroll;
-    width: 20%;
+    width: 15%;
   }
 }
-
 .top-section {
   padding: 40px;
 }
 
 .profile-image {
+  /*
   width: 150px;
   height: 150px;
+  */
+  width: 80%;
+  height: 80%;
   border: 4px solid white;
   -webkit-border-radius: 75px;
   border-radius: 75px;
@@ -303,6 +303,7 @@ hr {
 .profile-image img {
   width: 100%;
 }
+
 
 h3.profile-title {
   margin-bottom: 5px;
