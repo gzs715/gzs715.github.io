@@ -222,12 +222,12 @@ h1, h2, h3, h4, h5 {
 .main-content,
 .banner-bg {
   float: right;
-  width: 87%;
+  width: 85%;
 }
 @media screen and (max-width: 1290px) {
   .main-content,
   .banner-bg {
-    width: 87%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -273,10 +273,10 @@ hr {
 -------------------------------------------------------- */
 .sidebar-menu {
   float: left;
-  width: 13%;
+  width: 15%;
   height: 100%;
   position: fixed;
-  background-color: #0489cc;
+  background-color: #0c2f5c;
   color: white;
   overflow-y: hidden;
 }
