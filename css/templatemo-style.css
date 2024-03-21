@@ -445,13 +445,13 @@ h3.profile-title {
 .welcome-text h2 {
   font-size: 38px;
   font-family: 'robotoregular',STKaiti, Kaiti, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑";
-  color: black;
+  color: white;
   margin-bottom: 30px;
 }
 
 .welcome-text h5 {
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 /*------ about us ------ */
