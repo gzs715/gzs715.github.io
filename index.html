@@ -1,345 +1,67 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Zhongshu Gu</title>
-  <meta name="description" content="">
-    <!-- 
-	Volton Template
-	http://www.templatemo.com/tm-441-volton
--->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/font-awesome.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/templatemo-style.css">
-<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhongshu Gu - Research Scientist</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM5QJ2G16"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Zhongshu Gu</h1>
+      <nav class="space-x-6">
+        <a href="#bio" class="hover:text-blue-600">Bio</a>
+        <a href="#Research" class="hover:text-blue-600">Research</a>
+      </nav>
+    </div>
+  </header>
 
-  gtag('config', 'G-TEM5QJ2G16');
-</script>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+  <!-- Bio Section -->
+  <section id="bio" class="max-w-5xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+    <!-- Image -->
+    <div class="md:col-span-1 flex justify-center">
+      <img src="img/photo.jpg" alt="Zhongshu Gu" class="rounded-2xl shadow-md max-h-64 object-cover">
+    </div>
 
-      <div class="responsive-header visible-xs visible-sm">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="top-section">
-                <div class="profile-image">
-                  <img src="img/photo.jpg" alt="Zhongshu Gu">
-                </div>
-                <div class="profile-content">
-                  <h3 class="profile-title">Zhongshu Gu</h3>
-                  <p class="profile-description">Research Scientist</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
-          <div class="main-navigation responsive-menu">
-            <ul class="navigation">
-              <li><a href="#about"><i class="fa fa-graduation-cap"></i>Bio</a></li>
-              <li><a href="#research"><i class="fa fa-book"></i>Publications</a></li>
-              <li><a href="#gallery"><i class="fa fa-pencil"></i>Gallery</a></li>
-              <li><a href="#travel"><i class="fa fa-globe"></i>Travel</a></li>
-              <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!-- Text -->
+    <div class="md:col-span-2">
+      <h2 class="text-xl font-semibold mb-4">Bio</h2>
+      <p>Research Scientist, IBM Research (Thomas J. Watson Research Center)</p>
+      <p>Ph.D. Purdue University (2015)<br>B.S. Fudan University (2007)</p>
+      <p>Research Interests: AI Systems Security</p>
+    </div>
+  </section>
 
-      <!-- SIDEBAR -->
-      <div class="sidebar-menu hidden-xs hidden-sm">
-        <div class="top-section">
-          <div class="profile-image">
-            <img src="img/photo.jpg" alt="Zhongshu Gu">
-          </div>
-          <h3 class="profile-title">Zhongshu Gu</h3>
-          <p class="profile-description">Research Scientist</p>
-        </div> <!-- top-section -->
-        <div class="main-navigation">
-          <ul class="navigation">
-            <li><a href="#about"><i class="fa fa-graduation-cap"></i>Bio</a></li>
-            <li><a href="#research"><i class="fa fa-book"></i>Publications</a></li>
-            <li><a href="#gallery"><i class="fa fa-pencil"></i>Gallery</a></li>
-            <li><a href="#travel"><i class="fa fa-globe"></i>Travel</a></li>
-            <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
-          </ul>
-        </div> <!-- .main-navigation -->
-      </div> <!-- .sidebar-menu -->
+  <!-- Publications Section -->
+  <section id="Research" class="bg-white py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-xl font-semibold mb-6">Selected Recent Publications (<a href="https://scholar.google.com/citations?hl=en&user=QCx7_H4AAAAJ" class="text-blue-600 hover:underline">Full List</a>)</h2>
+      <ul class="space-y-6 list-disc list-inside">
+        <li><strong><a href="">GPU Travelling: Enabling Efficient Confidential Collaborative Training with TEE-Enabled GPUs</a></strong>, CCS 2025.<br><em>Shixuan Zhao, <b>Zhongshu Gu</b>, Salman Ahmed, Enriquillo Valdez, Hani Jamjoom, Zhiqiang Lin</em></li>
+
+        <li><strong><a href="pubs/SPLIT_CCS24.pdf">Crossing Shifted Moats: Replacing Old Bridges with New Tunnels to Confidential Containers</a></strong>, CCS 2024.<br><em>Enriquillo Valdez, Salman Ahmed, <b>Zhongshu Gu</b>, Christophe de Dinechin, Pau-Chen Cheng, Hani Jamjoom</em></li>
+
+        <li><strong><a href="pubs/SEAK_SEC24.pdf">SeaK: Rethinking the Design of a Secure Allocator for OS Kernel</a></strong>, USENIX Security 2024.<br><em>Zicheng Wang, Yicheng Guang, Yueqi Chen, Zhenpeng Lin, Michael Le, Dang K Le, Dan Williams, Xinyu Xing, <b>Zhongshu Gu</b>, Hani Jamjoom</em></li>
+
+        <li><strong><a href="pubs/TDX_CSUR.pdf">Intel TDX Demystified: A Top-Down Approach</a></strong>, ACM Computing Surveys, 2024.<br><em>Pau-Chen Cheng, Wojciech Ozga, Enriquillo Valdez, Salman Ahmed, <b>Zhongshu Gu</b>, Hani Jamjoom, Hubertus Franke, James Bottomley</em></li>
+
+        <li><strong><a href="pubs/DETA_EUROSYS24.pdf">DeTA: Minimizing Data Leaks in Federated Learning via Decentralized and Trustworthy Aggregation</a></strong>, Eurosys 2024.<br><em>Pau-Chen Cheng, Kevin Eykholt, <b>Zhongshu Gu</b>, Hani Jamjoom, K. R. Jayaram, Enriquillo Valdez, Ashish Verma</em></li>
+
+        <li><strong><a href="pubs/GNNIC_NDSS24.pdf">GNNIC: Finding Long-Lost Sibling Functions with Abstract Similarity</a></strong>, NDSS 2024.<br><em>Qiushi Wu, <b>Zhongshu Gu</b>, Hani Jamjoom, Kangjie Lu</em></li>
+
+        <!-- Continue formatting more publications as needed -->
+      </ul>
+    </div>
+  </section>
 
 
-      <div class="banner-bg" id="top">
-        <div class="banner-overlay"></div>
-        <div class="welcome-text">
-          <h2>Zhongshu Gu</h2>
-          <h5>Research Scientist, IBM Research</h5>
-        </div>
-      </div>
-
-      <!-- MAIN CONTENT -->
-      <div class="main-content">
-        <div class="fluid-container">
-
-          <div class="content-wrapper">
-            <!-- About -->
-            <div class="page-section" id="about">
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="widget-title"><i class="fa fa-graduation-cap"></i> Bio </h4>
-                  Zhongshu Gu is a Research Scientist in the Security Research Department of the IBM T.J. Watson Research Center. <br/>
-                  He received his Ph.D. from <a href="http://www.purdue.edu/">Purdue University</a> (Advisor: Prof.<a href="http://www.cs.purdue.edu/homes/dxu/"> Dongyan Xu</a>) and B.S. from <a href="http://www.fudan.edu.cn">Fudan University</a>, both in Computer Science. <br/>
-                  His current research interests are in the areas of systems security and AI security. <br/>
-                      </div>
-                    </div>
-                  </div> <!-- #about -->
-                  <!-- Research -->
-                  <div class="page-section" id="research">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h4 class="widget-title"><i class="fa fa-book"></i> Selected Publications (<a href="https://scholar.google.com/citations?hl=en&user=QCx7_H4AAAAJ">Full List</a>)</h4>
-                        <p><a href="pubs/SPLIT_CCS24.pdf">"Crossing Shifted Moats: Replacing Old Bridges with New Tunnels to Confidential Containers,"</a><br/>
-                          Proceedings of the 31th ACM Conference on Computer and Communications Security (<a href="https://www.sigsac.org/ccs/CCS2024/">CCS 2024</a>), Salt Lake City, UT, Oct 2024 <font size="1">(16.8%)</font> <br/>
-                          Enriquillo Valdez, Salman Ahmed, <b>Zhongshu Gu</b>, Christophe de Dinechin, Pau-Chen Cheng, Hani Jamjoom.<br/>
-                          <br/>
-                        </p> 
-
-                        <p><a href="pubs/SEAK_SEC24.pdf">"SeaK: Rethinking the Design of a Secure Allocator for OS Kernel,"</a><br/>
-                          Proceedings of the 33rd USENIX Security Symposium (<a href="https://www.usenix.org/conference/usenixsecurity24">USENIX Security 2024</a>), Philadelphia,
-                          PA, August 2024 <font size="1">(18.3%)</font> <br/>
-                          Zicheng Wang, Yicheng Guang, Yueqi Chen, Zhenpeng Lin, Michael Le, Dang K Le, Dan Williams, Xinyu Xing, <b>Zhongshu Gu</b>, Hani Jamjoom.<br/>
-                          <br/>
-                        </p>    
-
-                        <p><a href="pubs/TDX_CSUR.pdf">"Intel TDX Demystified: A Top-Down Approach,"</a><br/> 
-                          ACM Computing Surveys, Volume 56, Issue 9, April 2024 (<a href="https://dl.acm.org/doi/10.1145/3652597">doi</a>) <br/>
-                          Pau-Chen Cheng, Wojciech Ozga, Enriquillo Valdez, Salman Ahmed, <b>Zhongshu Gu</b>, Hani Jamjoom, Hubertus Franke, James Bottomley.<br/>
-                          <br/>
-                        </p>
-                        <p><a href="pubs/DETA_EUROSYS24.pdf">"DeTA: Minimizing Data Leaks in Federated Learning via Decentralized and Trustworthy Aggregation,"</a><br/>
-                          Proceedings of the 19th European Conference on Computer Systems (<a href="https://2024.eurosys.org/">Eurosys 2024</a>), Athens, Greece, April 2024 <font size="1">(14.6%)</font> <br/>
-                          Pau-Chen Cheng, Kevin Eykholt, <b>Zhongshu Gu</b>, Hani Jamjoom, K. R. Jayaram, Enriquillo Valdez, Ashish Verma.<br/>
-                          <br/>
-                        </p>
-
-                        <p><a href="pubs/GNNIC_NDSS24.pdf">"GNNIC: Finding Long-Lost Sibling Functions with Abstract Similarity,"</a> <br/>
-                          Proceedings of the 31st Network and Distributed System Security Symposium (<a href="https://www.ndss-symposium.org/ndss2024/">NDSS 2024</a>), San Diego, CA, February 2024 <font size="1">(20.2%)</font> <br/>
-                          Qiushi Wu, <b>Zhongshu Gu</b>, Hani Jamjoom, Kangjie Lu.<br/>
-                          <br/>
-                        </p>
-
-
-
-                        <p><a href="pubs/GLITCHING_DSN21.pdf">"Glitching Demystified: Analyzing Control-flow-based Glitching Attacks and Defenses,"</a> <br/>Proceedings of the 51st IEEE/IFIP International Conference on Dependable Systems and Networks  (<a href="http://dsn2021.ntu.edu.tw/">DSN 2021</a>), Virtual, June 2021 <font size="1">(16.3%)</font> <br/>
-                          Chad Spensky, Aravind Machiry, Nathan Burow, Hamed Okhravi, Rick Housley, <b>Zhongshu Gu</b>, Hani Jamjoom, Christopher Kruegel, Giovanni Vigna. <br/>
-                          <br/>
-                        </p>
-
-                          <p><a href="pubs/SCARECROW_DSN20.pdf">"Scarecrow: Deactivating Evasive Malware via Its Own Evasive Logic,"</a> <br/>Proceedings of the 50th IEEE/IFIP International Conference on Dependable Systems and Networks  (<a href="https://dsn2020.webs.upv.es/">DSN 2020</a>), Virtual, June 2020 <font size="1">(16.5%)</font> <br/>
-                          Jialong Zhang, <b>Zhongshu Gu</b>, Jiyong Jang, Dhilung Kirat, Marc Ph. Stoecklin, Xiaokui Shu, Heqing Huang. <br/>
-                          <br/>
-                        </p>
-                        
-                          <p><a href="pubs/HOUDINI_CCS19.pdf">"Houdini’s Escape: Breaking the Resource Rein of Linux Control Groups,"</a><br/>
-                            Proceedings of the 26th ACM Conference on Computer and Communications Security (<a href="https://www.sigsac.org/ccs/CCS2019/">CCS 2019</a>), London, UK, Nov 2019<font size="1">(16.0%)</font> <br/>
-                            Xing Gao, <b>Zhongshu Gu</b>, Zhengfa Li, Hani Jamjoom, Cong Wang.<br/>
-                            <br/>
-                          </p>
-
-
-
-
-                        <p><a href="pubs/CALTRAIN_DSN19.pdf">"Reaching Data Confidentiality and Model Accountability on the CalTrain,"</a><br/>
-                          Proceedings of the 49th IEEE/IFIP International Conference on Dependable Systems and Networks (<a href="http://2019.dsn.org/">DSN 2019</a>), Portland, OR, June 2019 <font size="1">(21.4%)</font> <br/>
-                          <b>Zhongshu Gu</b>, Hani Jamjoom, Dong Su, Heqing Huang, Jialong Zhang, Tengfei Ma, Dimitrios Pendarakis, Ian Molloy.<br/>
-                          <br/>
-                        </p>
-                        
-                        <p><a href="https://arxiv.org/pdf/1807.00969.pdf">"Confidential Inference via Ternary Model Partitioning,"</a> 
-                          <span class="label label-warning">Preprint</span><br/>
-                          arXiv:1807.00969(<a href="https://arxiv.org/abs/1807.00969">[cs.CR]</a>) <br/>
-                          <b>Zhongshu Gu</b>, Heqing Huang, Jialong Zhang, Dong Su, Hani Jamjoom, Ankita Lamba, Dimitrios Pendarakis, Ian Molloy.<br/>
-                          <br/>
-                        </p>
-
-
-                        <p><a href="pubs/SECNAMESPACE_SEC18.pdf">"Security Namespace: Making Linux Security Frameworks Available to Containers,"</a> <br/>Proceedings of the 27th USENIX Security Symposium (<a href="https://www.usenix.org/conference/usenixsecurity18">USENIX Security 2018</a>), Baltimore, MD, August 2018 <font size="1">(19.1%)</font> <br/>
-                          Yuqiong Sun, David Safford, Mimi Zohar, Dimitrios Pendarakis, <b>Zhongshu Gu</b>, Trent Jaeger. <br/>
-                          <br/>
-                        </p>
-
-                        <p><a href="pubs/WATERMARK_ASIACCS18.pdf">"Protecting Intellectual Property of Deep Neural Networks with Watermarking,"</a> <br/>Proceedings of the 13th ACM ASIA Conference on Information, Computer and Communications
-                          Security (<a href="http://asiaccs2018.org/">ASIACCS 2018</a>), Incheon, Korea, June 2018 <font size="1">(20%)</font> <br/>
-                          Jialong Zhang, <b>Zhongshu Gu</b>, Jiyong Jang, Hui Wu, Marc Ph. Stoecklin, Heqing Huang, Ian
-                          Molloy. <br/>
-                          <br/>
-                        </p>
-                        <p><a href="pubs/MINION_NDSS18.pdf">"Securing Real-Time Microcontroller Systems through Customized Memory View Switching,"</a> <br/>Proceedings of the 25th Network and Distributed System Security Symposium (<a href="https://www.internetsociety.org/events/ndss-symposium/ndss-symposium-2018">NDSS 2018</a>), San Diego, CA, February 2018 <font size="1">(21%)</font> <br/>
-                          Chung Hwan Kim, Taegyu Kim, Hongjun Choi, <b>Zhongshu Gu</b>, Byoungyoung Lee, Xiangyu Zhang, Dongyan Xu.<br/>
-                          <br/>
-                        </p>
-
-                        <p><a href="pubs/CONTAINERLEAKS_DSN17.pdf">"ContainerLeaks: Emerging Security Threats of Information Leakages in Container Clouds,"</a> <br/> 
-                          Proceedings of the 47th IEEE/IFIP International Conference on Dependable Systems and Networks (<a href="http://dsn2017.github.io/">DSN 2017</a>), Denver, CO, June 2017 <font size="1">(22.3%)</font> <br/>
-                          Xing Gao, <b>Zhongshu Gu</b>, Mehmet Kayaalp, Dimitrios Pendarakis, Haining Wang.<br/>
-                          <br/>
-                        </p>
-
-                        <p><a href="pubs/DLV_ICDCS17.pdf"> "Privacy Implications of DNSSEC Look-aside Validation,"</a> <span class="label label-info">Short Paper</span> <br/>
-                          Proceedings of the 37th IEEE International Conference on Distributed Computing Systems (<a href=https://icdcs2017.gatech.edu/>ICDCS 2017</a>),  Atlanta, GA, June 2017  <br/>
-                          Aziz Mohaisen, <b>Zhongshu Gu</b>, Kui Ren.<br/>
-                          <br/>
-                        </p>
-
-                        <p><a href="pubs/HERCULE_ACSAC16.pdf"> "HERCULE: Attack Story Reconstruction via Community Discovery on Correlated Log Graph,"</a> <br/>
-                          Proceedings of the 32nd Annual Computer Security Applications Conference (<a href=https://www.acsac.org/2016/>ACSAC 2016</a>), Los Angeles, CA, December 2016 <font size="1">(22.8%)</font>  <br/>
-                          Kexin Pei, <b>Zhongshu Gu</b>, Brendan Saltaformaggio, Shiqing Ma, Fei Wang, Zhiwei Zhang, Luo Si, Xiangyu Zhang, Dongyan Xu. <br/>
-                          <br/></p>
-
-                          <p><a href="pubs/VMOCITY_SRDS16.pdf" >"vMocity: Traveling VMs across Heterogeneous Clouds,"</a> <br/>
-                           Proceedings of the 35th IEEE Symposium on Reliable Distributed Systems
-                           (<a href="http://srds2016.inf.mit.bme.hu/">SRDS 2016</a>), Budapest,
-                           Hungary, September 2016 <font size="1">(35%)</font>  <br/> 
-                           Cheng Cheng, Zhui Deng, <b>Zhongshu Gu</b>, Dongyan Xu.<br/>
-                           <br/></p>
-
-                           <p><a href="pubs/GUITAR_CCS15.pdf">"GUITAR: Piecing Together Android App GUIs from Memory Images,"</a> <span class="label label-success"> Best Paper Award</span> <br/>
-                            Proceedings of the 22nd ACM Conference on Computer and Communications Security (<a href="http://www.sigsac.org/ccs/CCS2015/">CCS 2015</a>), Denver, CO, October 2015 <font size="1">(19.8%)</font>   <br/>
-                            Brendan Saltaformaggio, Rohit Bhatia, <b>Zhongshu Gu</b>, Xiangyu Zhang, Dongyan Xu.  <br/> 
-                            <br/></p>
-
-                            <p><a href="pubs/VCR_CCS15.pdf">"VCR: App-Agnostic Recovery of Photographic Evidence from Android Device Memory Images," </a><br/>
-                              Proceedings of the 22nd ACM Conference on Computer and Communications Security (<a href="http://www.sigsac.org/ccs/CCS2015/">CCS 2015</a>), Denver, CO, October 2015 <font size="1">(19.8%)</font> <br/>
-                              Brendan Saltaformaggio, Rohit Bhatia, <b>Zhongshu Gu</b>, Xiangyu Zhang, Dongyan Xu.<br/> 
-                              <br/></p>
-
-                              <p><a href="pubs/LEAPS_DSN15.pdf">"LEAPS: Detecting Camouflaged Attacks with Statistical Learning Guided by Program Analysis,"</a> <br/> 
-                                Proceedings of the 45th IEEE/IFIP International Conference on Dependable Systems and Networks (<a href="http://2015.dsn.org/">DSN 2015</a>), Rio de Janeiro, Brazil, June 2015 <font size="1">(21.7%)</font> <br/>
-                                <b>Zhongshu Gu</b>, Kexin Pei, Qifan Wang, Luo Si, Xiangyu Zhang, Dongyan Xu.<br/>
-                                <br/></p>
-
-                                <p><a href="pubs/DS_SEC14.pdf">"DSCRETE: Automatic Rendering of Forensic Information from Memory Images via Application Logic Reuse,"</a> <span class="label label-success"> Best Student Paper Award</span><br/>
-                                  Proceedings of the 23rd USENIX Security Symposium (<a href="https://www.usenix.org/conference/usenixsecurity14">USENIX Security 2014</a>), San Diego, CA, August 2014 <font size="1">(19.1%)</font>   <br/>
-                                  Brendan Saltaformaggio, <b>Zhongshu Gu</b>, Xiangyu Zhang, Dongyan Xu. <br/> 
-                                  <br/></p>
-
-                                  <p><a href="pubs/FC_DSN14.pdf">"FACE-CHANGE: Application-Driven Dynamic Kernel View Switching in a Virtual Machine,"</a> <br/>
-                                    Proceedings of the 44th IEEE/IFIP International Conference on Dependable Systems and Networks (<a href="http://2014.dsn.org/">DSN 2014</a>), Atlanta, GA, June 2014 <font size="1">(30%)</font> <br/>
-                                    <b>Zhongshu Gu</b>, Brendan Saltaformaggio, Xiangyu Zhang, Dongyan Xu.<br/>
-                                    <br/></p>
-
-                                    <p><a href="pubs/DRIP_DSN13.pdf">"DRIP: A Framework for Purifying Trojaned Kernel Drivers,"</a> <br/>
-                                      Proceedings of the 43rd IEEE/IFIP International Conference on Dependable Systems and Networks (<a href="http://2013.dsn.org/">DSN-PDS 2013</a>), Budapest, Hungary, June 2013 <font size="1">(22.1%)</font> <br/>
-                                      <b>Zhongshu Gu</b>, William N. Sumner, Zhui Deng, Xiangyu Zhang, Dongyan Xu.<br/>
-                                      <br/></p>
-
-                                      <p><a href="pubs/PI_SRDS11.pdf">"Process Implanting: A New Active Introspection Framework for Virtualization,"</a> <br/>Proceedings of the 30th IEEE Symposium on Reliable Distributed Systems(<a href="http://lsd.ls.fi.upm.es:11888/srds/">SRDS 2011</a>), Madrid, Spain, October 2011 <font size="1">(26.1%)</font>  <br/> 
-                                        <b>Zhongshu Gu</b>, Zhui Deng, Dongyan Xu, Xuxian Jiang.<br/></p>
-                                      </div>
-                                    </div>
-                                  </div> <!-- #research -->
-                                  <!-- Personal -->
-                                  <div class="page-section" id="gallery">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h4 class="widget-title"><i class="fa fa-pencil"></i> Gallery </h4>
-                                        </div>
-                                    </div>
-                                    <div class="slideshow-container" id="slideshow-container">
-                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                    </div>
-                                    <div style="text-align:center" id="dots-container"></div>
-                                </div>
-                                
-                                <script src="slideshow.js"></script>
-
-                                        <div class="page-section" id="travel">
-                                          <div class="row">
-                                            <div class="col-md-12">
-                                              <h4 class="widget-title"><i class="fa fa-globe"></i> Travel </h4>
-                                            </div>
-                                          </div>
-                                          <div class="row projects-holder">
-                                            <div class="col-md-4 col-sm-6">
-                                              <div class="project-item">
-                                                <img src="img/world.png" alt="world">
-                                                <div class="project-hover">
-                                                  <div class="inside">
-                                                    <h5><a href="#">China, USA, Spain, Hungary, Brazil, UK, Canada, Greece</a></h5>
-                                                    <p></p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-6">
-                                              <div class="project-item">
-                                                <img src="img/china.png" alt="china">
-                                                <div class="project-hover">
-                                                  <div class="inside">
-                                                    <h5><a href="#">上海，江苏，浙江，北京，江西，安徽，青海，甘肃，四川，陕西，内蒙古，天津，河北，山西，西藏，山东，湖北，重庆，黑龙江，吉林，辽宁</a></h5>
-                                                    <p></p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-6">
-                                              <div class="project-item">
-                                                <img src="img/usa.png" alt="usa">
-                                                <div class="project-hover">
-                                                  <div class="inside">
-                                                    <h5><a href="#">IL, IN, MI, MA, NY, PA, DC, VA, MD, NV, CA, KY, FL, GA, NJ, TX, OH, CO, CT, NC, NH, ME, OR, RI, DE</a></h5>
-                                                    <p></p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div> <!-- #personal --> 
-                                          <!-- CONTACT -->
-                                          <div class="page-section" id="contact">
-                                            <div class="row">
-                                              <div class="col-md-12">
-                                                <h4 class="widget-title"><i class="fa fa-envelope"></i> Contact</h4>
-                                                <p>
-                                                  <i class="fa fa-map-marker"></i> Address: 1101 Route 134 Kitchawan Rd, Yorktown Heights, NY 10598 <br/>
-                                                  <i class="fa fa-envelope-o"></i> E-mail: gzs715 [at] gmail [dot] com
-                                                </p>
-                                              </div>
-                                            </div>
-                                          </div> 
-
-                                          <div class="row" id="footer">
-                                            <div class="col-md-12 text-center">
-                                              <p class="copyright-text">Copyright &copy; 2024 Zhongshu Gu</p>
-                                            </div>
-                                          </div>
-
-                                        </div>
-
-                                      </div>
-                                    </div>
-
-                                    <script src="js/vendor/jquery-1.10.2.min.js"></script>
-                                    <script src="js/min/plugins.min.js"></script>
-                                    <script src="js/min/main.min.js"></script>
-
-                                  </body>
-                                  </html>
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-12">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-gray-600">
+      © 2025 Zhongshu Gu. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
